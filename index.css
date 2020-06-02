@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+div.login{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    text-align: left;
+    align-content: center;
+}
+a.dropdown-item{
+    text-align: center;
+}
+body{
+    background-color: rgb(127, 137, 141);
+}
