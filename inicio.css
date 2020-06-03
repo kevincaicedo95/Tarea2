@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(127, 137, 141);
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+h1{
+    text-align: center;
+}
+a{
+    font-style: oblique;
+    color: rgb(23, 23, 24);
+}
+div.collapse.navbar-collapse{
+    background-color: rgb(127, 137, 141);
+    text-align: center;
+    align-content: center;
+}
+img{
+    float: right;
+    margin-right: 5%;
+}
+p{
+    float: left;
+    width: 50%;
+    font-size: x-large;
+}
