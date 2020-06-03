@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cuerpo">
+        <h1>SISTEMA DE IMAGENES - ING SOFTWARE</h1>
+        <ul class="pagination justify-content-end"><button type="button" class="btn btn-secondary" role="link" onclick="location.href='index.html'">Salir</button></ul>
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="nav-link" href="inicio.html">INICIO</a>
+                <a class="nav-link" href="IngresarPaciente.html">INGRESAR PACIENTE</a>
+                <a class="nav-link" href="ConsultarPaciente.html">CONSULTAR PACIENTE</a>
+                <a class="nav-link" href="conozcanos.html">CONÓZCANOS</a>
+                <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
+            </div>
+        </nav>
+        <hr>
+        <form id="formulario" autocomplete="off">
+            <div class="izquierda">           
+                <dl class="row">
+                    <dt class="col-sm-3">Nombre: </dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </dd>
+                    <dt class="col-sm-3">Documento de Identidad: </dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="documento de identidad" name="documento">
+                    </dd>
+                    <dt class="col-sm-3">Género:</dt>
+                    <dd class="col-sm-9">
+                        <select class="custom-select my-1 mr-sm-2" id="sexo" name="sexo">
+                        <option selected>Seleccione</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+                    </dd>
+                    <dt class="col-sm-3">EPS:</dt>
+                    <dd class="col-sm-9">
+                        <select class="custom-select my-1 mr-sm-2" id="eps" name="eps">
+                            <option selected>Seleccione</option>
+                            <option value="1">IPS UDEA</option>
+                            <option value="2">COOMEVA</option>
+                            <option value="3">SURA</option>
+                            <option value="4">CRUZ BLANCA</option>
+                            <option value="5">MEDIMAS</option>
+                        </select>
+                    </dd>
+                    <dt class="col-sm-3">Edad:</dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="edad" name="edad">
+                    </dd>
+                    <dt class="col-sm-3">Teléfono:</dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="telefono" name="telefono">
+                    </dd>
+                        <dt class="col-sm-3">Dirección:</dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="direccion" name="direccion">
+                    </dd>
+                </dl> 
+                <ul class="pagination justify-content-center"><button type="submit" class="btn btn-secondary">Enviar información del Paciente</button></ul>
+            </div>           
+            <div class="derecha">                        
+                <div class="custom-file">
+                <input type="file" class="custom-file-input" id="img" name="file" lang="es">
+                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                </div>
+            </div>       
+        </form>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

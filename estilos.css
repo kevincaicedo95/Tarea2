@@ -21,8 +21,35 @@ img{
     float: right;
     margin-right: 5%;
 }
-p{
+p.text-justify{
     float: left;
     width: 50%;
     font-size: x-large;
+}
+h2{
+    text-align: center;
+}
+div.textoC{
+    font-size: large;
+    margin: 3%;
+}
+div.formulario{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    text-align: left;
+    align-content: center;
+}
+div.izquierda{
+    float: left;
+    width: 50%;
+}
+div.derecha{
+    float: right;
+    width: 40%;
+    margin: 3%;
+}
+nav.navbar.navbar-light.bg-light{
+    background-color:rgb(127, 137, 141);
 }

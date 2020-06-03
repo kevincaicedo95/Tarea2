@@ -11,7 +11,9 @@
 <body>
     <div class="cuerpo">
         <h1>SISTEMA DE IMAGENES - ING SOFTWARE</h1>
-        <ul class="pagination justify-content-end"><button type="button" class="btn btn-secondary" role="link" onclick="location.href='index.html'">Salir</button></ul>
+        <ul class="pagination justify-content-end">
+            <button type="button" class="btn btn-secondary" role="link" onclick="location.href='index.html'">Salir</button>
+        </ul>
         <br>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,17 +25,31 @@
             </div>
         </nav>
         <hr>
-        <div class="texto">
-            <p class="text-justify">SISTEMA DE IMÁGENES – IMG SOFTWARE
-                es una aplicación que proporciona un
-                sistema de almacenamiento de imágenes
-                médicas, que estarán al servicio de los
-                médicos y sus respectivas especialidades,
-                de tal forma que se tienen disponibles
-                para en el momento de la consulta del
-                pacientes.
-                </p>
-            <img src="img/img.jpg">
+        <div class="formulario">
+            <form id="contacto" autocomplete="off">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input class="form-control" name="nombre" id="nombre" />
+                </div>
+                
+                <div class="form-group">
+                    <label>Teléfono de contacto:</label>
+                    <input class="form-control" name="telefono" id="telefono" />
+                </div>
+                                    
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email de contacto:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="8"></textarea>
+                </div>                 
+                <ul class="pagination justify-content-center">
+                <button type="submit" class="btn btn btn-secondary">Enviar datos y mensaje</button>
+                </ul>
+                
+            </form>    
         </div>
     </div>
 
