@@ -8,7 +8,7 @@ var direccion = document.getElementById('direccion')
 var imagen = document.getElementById('imagen')
 
 
-console.log(nombre.value)
+
 $('.custom-file input').change(function (e) {
     if (e.target.files.length) {
         $(this).next('.custom-file-label').html(e.target.files[0].name);
@@ -20,7 +20,7 @@ var form = document.getElementById('formulario')
      evt.preventDefault();
      if ((nombre.value=='')||(documento.value=='')||(genero.value=="Seleccione")||(eps.value=="Seleccione")
         ||(edad.value=='')||(telefono.value=='')||(direccion.value=='')||(imagen.value=='')){
-           alert('se debe llenar todos los campos');
+           alert('Se debe llenar todos los campos');
      }
      else{
         axios({
@@ -60,6 +60,15 @@ var form = document.getElementById('formulario')
             }
           }).then(response=>{
               console.log(response)
+              alert("Paciente guardado")
         })
+        nombre.value=''
+        documento.value=''
+        genero.value="Seleccione"
+        eps.value="Seleccione"
+        edad.value=''
+        telefono.value=''
+        direccion.value=''
+        imagen.value=''
      }
  });
