@@ -32,7 +32,7 @@
                     </dd>
                     <dt class="col-sm-3">Documento de Identidad: </dt>
                     <dd class="col-sm-9">
-                        <input type="text" class="form-control" id="documento de identidad" name="documento">
+                        <input type="text" class="form-control" id="documento" name="documento">
                     </dd>
                     <dt class="col-sm-3">Género:</dt>
                     <dd class="col-sm-9">
@@ -69,9 +69,11 @@
                 <ul class="pagination justify-content-center"><button type="submit" class="btn btn-secondary">Enviar información del Paciente</button></ul>
             </div>           
             <div class="derecha">                        
-                <div class="custom-file">
-                <input type="file" class="custom-file-input" id="img" name="file" lang="es">
-                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="imagen"/>
+                        <label class="custom-file-label" for="inputGroupFile02">Seleccionar imagen</label>
+                    </div>
                 </div>
             </div>       
         </form>
@@ -83,5 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./IngresarPaciente.js"></script>
+    <script src="./inicio.js"></script>
 </body>
 </html>
