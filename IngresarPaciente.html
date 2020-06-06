@@ -57,24 +57,32 @@
                     <dd class="col-sm-9">
                         <input type="text" class="form-control" id="edad" name="edad">
                     </dd>
-                    <dt class="col-sm-3">Teléfono:</dt>
-                    <dd class="col-sm-9">
-                        <input type="text" class="form-control" id="telefono" name="telefono">
-                    </dd>
+                        <dt class="col-sm-3">Teléfono:</dt>
+                        <dd class="col-sm-9">
+                            <input type="text" class="form-control" id="telefono" name="telefono">
+                        </dd>
                         <dt class="col-sm-3">Dirección:</dt>
-                    <dd class="col-sm-9">
-                        <input type="text" class="form-control" id="direccion" name="direccion">
-                    </dd>
+                        <dd class="col-sm-9">
+                            <input type="text" class="form-control" id="direccion" name="direccion">
+                        </dd>
                 </dl> 
                 <ul class="pagination justify-content-center"><button type="submit" class="btn btn-secondary">Enviar información del Paciente</button></ul>
             </div>           
             <div class="derecha">                        
                 <div class="input-group mb-3">
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="imagen"/>
+                        <input type="file" class="custom-file-input" id="imagen" accept="image/*"/>
                         <label class="custom-file-label" for="inputGroupFile02">Seleccionar imagen</label>
                     </div>
                 </div>
+                <p id="status"></p>
+                <div class="imagen">
+                  <img id="output" width="400" height="309">
+                </div>
+                    <dt class="col-sm-9">Dirección disco duro:</dt>
+                    <dd class="col-sm-9">
+                        <input type="text" class="form-control" id="direccion_D" name="direccion_D">
+                    </dd>
             </div>       
         </form>
     </div>

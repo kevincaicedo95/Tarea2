@@ -6,6 +6,7 @@ var edad = document.getElementById('edad')
 var telefono = document.getElementById('telefono')
 var direccion = document.getElementById('direccion')
 var imagen = document.getElementById('imagen')
+var direccion_D = document.getElementById('direccion_D')
 
 
 
@@ -15,14 +16,16 @@ $('.custom-file input').change(function (e) {
     }
 });
 
+
 var form = document.getElementById('formulario')
  form.addEventListener('submit',function(evt){
      evt.preventDefault();
      if ((nombre.value=='')||(documento.value=='')||(genero.value=="Seleccione")||(eps.value=="Seleccione")
-        ||(edad.value=='')||(telefono.value=='')||(direccion.value=='')||(imagen.value=='')){
+        ||(edad.value=='')||(telefono.value=='')||(direccion.value=='')||(imagen.value=='')||(direccion_D.value=='')){
            alert('Se debe llenar todos los campos');
      }
      else{
+       var imag=direccion_D.value+'/'+imagen.value;
         axios({
             method: 'post',
             url: "http://161.35.110.128/api/v1/login/access-token",
@@ -50,7 +53,7 @@ var form = document.getElementById('formulario')
                 "name": nombre.value,
                 "age": edad.value,
                 "b64": "string",
-                "image_url": imagen.value,
+                "image_url": imag,
                 "gender": genero.value,
                 "eps": eps.value
               },
