@@ -29,7 +29,9 @@ var form = document.getElementById('buscar')
                 document.getElementById('edad').innerHTML = edad;
                 document.getElementById('eps').innerHTML = eps;
                 document.getElementById('genero').innerHTML = genero;
-                document.getElementById('imagen').innerHTML = imagen;
+                var contenedor=document.getElementById("imag");
+                contenedor.src = imagen
+                
             }
         })
      }

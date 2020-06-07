@@ -73,5 +73,6 @@ var form = document.getElementById('formulario')
         telefono.value=''
         direccion.value=''
         imagen.value=''
+        direccion_D.value=''
      }
  });
